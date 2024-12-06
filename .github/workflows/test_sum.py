@@ -3,9 +3,5 @@ def test_sum_of_numbers():
     for i in range(1, 100):
         x += i
     
-    # The expected sum is the sum of the first 99 natural numbers: n(n+1)/2
     expected_sum = 99 * (99 + 1) // 2
     assert x == expected_sum, f"Test failed: x = {x}, expected = {expected_sum}"
-    print("Test passed!")
-
-test_sum_of_numbers()
